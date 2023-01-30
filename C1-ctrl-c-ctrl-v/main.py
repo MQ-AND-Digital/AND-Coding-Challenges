@@ -29,7 +29,5 @@ def modifyString(original):
 
     next = findNextCommand(s)
 
-  cleanedString = s.replace("[CTRL+C]", "").replace("[CTRL+V]", "").replace("[CTRL+X]", "").replace("  ", " ").strip()
+  cleanedString = s.replace("[CTRL+V]", "").replace("  ", " ").strip()
   return cleanedString
-
-print(modifyString(stringsList[0]))
